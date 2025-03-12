@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/*This makes sure that nothing is shrinking the <body>, 
+which could prevent .Project_panel from stretching.*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-family: Arial;
+}
+
+/*Beginnning of header section*/
+
+.Image{
+    border-radius: 40px;
+    width: 60px;
+    position: relative;
+    left: 60px;
+}
+
+.header_section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+.home:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05);
+    text-shadow: 10px 10px 100px black;
+}
+
+.about:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05);
+    text-shadow: 10px 10px 100px black;
+}
+
+.hire:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05);
+    text-shadow: 10px 10px 100px black;
+}
+/*End of header section*/
+
+/*Beginning of brief summary*/
+.Summary{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.brief_summary{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 20px; /* Add some space between the text and the image */
+}
+
+.brief_summ{
+    font-family: Arial;
+    margin: 0px;
+}
+
+.intro_line{
+    font-weight: bolder;
+    margin: 10px 0; /* Add vertical margin */
+    color: rgb(73, 78, 82);
+}
+
+.CTA{
+    font-weight: bolder;
+    margin: 10px 0; /* Add vertical margin */
+    color: rgb(73, 78, 82);
+}
+
+.my_picture{
+    display: flex;
+}
+
+.me{
+    width: 150px;
+    border-radius: 80px;
+    box-shadow: 10px 10px 100px black;
+}
+
+.CTA_button{
+    color: white;
+    font-size: 15px;
+    border-radius: 40px;
+    background-color: black;
+    border: none;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.CTA_button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 100px black;
+}
+/*End of brief summary section*/
+
+/*Beginning of project panel*/
+
+.Project_panel {
+    flex-grow: 1; /* Takes the remaining space */
+    width: 100vw;
+    background-color: black;
+}
